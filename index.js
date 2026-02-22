@@ -44,4 +44,5 @@ await channel.send({
 }
 });
 
-client.login("MTQ3NDY1MTIzMzk5MzEwMTM3Mw.GSj2fj.gBFVhru3YHZ4YXoX33i7bztZLxCuQz6Mz7yGAc");
+client.login(process.env.TOKEN);
+//client.login("MTQ3NDY1MTIzMzk5MzEwMTM3Mw.GSj2fj.gBFVhru3YHZ4YXoX33i7bztZLxCuQz6Mz7yGAc");
