@@ -44,5 +44,10 @@ await channel.send({
 }
 });
 
+if (!process.env.TOKEN) {
+  console.error("❌ TOKEN is missing. Add TOKEN in Railway Variables.");
+  process.exit(1);
+}
 client.login(process.env.TOKEN);
 //client.login("MTQ3NDY1MTIzMzk5MzEwMTM3Mw.GSj2fj.gBFVhru3YHZ4YXoX33i7bztZLxCuQz6Mz7yGAc");
+
